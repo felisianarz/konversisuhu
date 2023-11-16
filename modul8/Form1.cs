@@ -71,8 +71,13 @@ namespace mod8_kel38
 			}
 			if (rbReamur.Checked)
 			{
-				suhuawal konversi = 2;
-				hasil = Convert.ToString(Math.Round(knvrsi(suhuawal, suhukonversi, inputsuhu), 2)) + "\n " + "\n" + "Reamur";
+				suhuawal konversi = 3;
+				hasil = Convert.ToString(Math.Round(knvrsi(suhuawal, suhukonversi, inputsuhu), 3)) + "\n " + "\n" + "Reamur";
+			}
+   			if (rbKelvin.Checked)
+			{
+				suhuawal konversi = 4;
+				hasil = Convert.ToString(Math.Round(knvrsi(suhuawal, suhukonversi, inputsuhu), 4)) + "\n " + "\n" + "Reamur";
 			}
 			txtHasil.Text = hasil;
 
